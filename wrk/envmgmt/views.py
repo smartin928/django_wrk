@@ -16,9 +16,8 @@ def add_project(request):
             return render(request, 'envmgmt/thanks.html')
     else:
         form = EnvMainForm()
-        form_typ = "Project"
 
-    return render(request, 'envmgmt/addprj.html', {'form': form, 'form_typ': form_typ})
+    return render(request, 'envmgmt/addprj.html', {'form': form})
 
 
 def add_details(request):
@@ -29,6 +28,5 @@ def add_details(request):
             return render(request, 'envmgmt/thanks.html')
     else:
         form = EnvDtlForm()
-        form_typ = "Project Detail"
 
-    return render(request, 'envmgmt/addprj.html', {'form': form, 'form_typ': form_typ})
+    return render(request, 'envmgmt/adddtl.html', {'form': form})
