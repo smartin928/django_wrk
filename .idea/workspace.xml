@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="773c358f-e82c-4246-acc8-49593f040eff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/wrk/templates/envmgmt/adddtl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wrk/envmgmt/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrk/envmgmt/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrk/templates/envmgmt/addprj.html" beforeDir="false" afterPath="$PROJECT_DIR$/wrk/templates/envmgmt/addprj.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrk/templates/envmgmt/thanks.html" beforeDir="false" afterPath="$PROJECT_DIR$/wrk/templates/envmgmt/thanks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrk/templates/envmgmt/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wrk/templates/envmgmt/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wrk/envmgmt/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+            <state relative-caret-position="544">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -71,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thanks.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="thanks.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/thanks.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -83,8 +80,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="68">
+              <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -150,12 +147,12 @@
         <option value="$PROJECT_DIR$/wrk/wrk/settings.py" />
         <option value="$PROJECT_DIR$/wrk/wrk/urls.py" />
         <option value="$PROJECT_DIR$/wrk/templates/index.html" />
-        <option value="$PROJECT_DIR$/wrk/templates/envmgmt/index.html" />
         <option value="$PROJECT_DIR$/wrk/templates/envmgmt/base.html" />
         <option value="$PROJECT_DIR$/wrk/templates/envmgmt/adddtl.html" />
         <option value="$PROJECT_DIR$/wrk/templates/envmgmt/addprj.html" />
-        <option value="$PROJECT_DIR$/wrk/envmgmt/views.py" />
         <option value="$PROJECT_DIR$/wrk/templates/envmgmt/thanks.html" />
+        <option value="$PROJECT_DIR$/wrk/templates/envmgmt/index.html" />
+        <option value="$PROJECT_DIR$/wrk/envmgmt/views.py" />
       </list>
     </option>
   </component>
@@ -246,7 +243,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="167" y="30" width="1582" height="1000" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -322,17 +318,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/adddtl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/thanks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -346,13 +349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/adddtl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/addprj.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -360,20 +356,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrk/envmgmt/views.py">
+    <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/thanks.html">
+    <entry file="file://$PROJECT_DIR$/wrk/envmgmt/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        <state relative-caret-position="544">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

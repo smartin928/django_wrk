@@ -30,3 +30,4 @@ def add_details(request):
         form = EnvDtlForm()
 
     return render(request, 'envmgmt/adddtl.html', {'form': form})
+

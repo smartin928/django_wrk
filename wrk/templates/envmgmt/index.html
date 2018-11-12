@@ -2,7 +2,7 @@
 {% block content %}
 <h2>Available Projects</h2>
 {% for prj in prjs %}
-    <ul>{{ prj.project_name }}</ul>
+<ul><a href="{{ prj.project_name }}/">{{ prj.project_name }}</a></ul>
 {% endfor %}
 
 {% endblock %}
