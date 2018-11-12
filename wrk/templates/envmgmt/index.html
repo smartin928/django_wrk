@@ -1,4 +1,8 @@
 {% extends 'envmgmt/base.html' %}
-{% block nav %}
-    <a href="/envmgmt">env mgmt home</a>
+{% block content %}
+<h2>Available Projects</h2>
+{% for prj in prjs %}
+    <ul>{{ prj.project_name }}</ul>
+{% endfor %}
+
 {% endblock %}

@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from .forms import EnvMainForm, EnvDtlForm
+from .models import EnvMain
 
 
 def index(request):
-    return render(request, 'envmgmt/index.html')
+    prjs = EnvMain.objects.values('project_name').distinct()
+    return render(request, 'envmgmt/index.html', {'prjs': prjs})
 
 
 def add_project(request):
@@ -16,7 +18,7 @@ def add_project(request):
         form = EnvMainForm()
         form_typ = "Project"
 
-    return render(request, 'envmgmt/add_project.html', {'form': form, 'form_typ': form_typ})
+    return render(request, 'envmgmt/addprj.html', {'form': form, 'form_typ': form_typ})
 
 
 def add_details(request):
@@ -29,4 +31,4 @@ def add_details(request):
         form = EnvDtlForm()
         form_typ = "Project Detail"
 
-    return render(request, 'envmgmt/add_project.html', {'form': form, 'form_typ': form_typ})
+    return render(request, 'envmgmt/addprj.html', {'form': form, 'form_typ': form_typ})

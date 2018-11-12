@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="773c358f-e82c-4246-acc8-49593f040eff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/wrk/templates/envmgmt/addprj.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrk/templates/envmgmt/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrk/templates/envmgmt/thanks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrk/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wrk/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrk/wrk/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrk/wrk/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrk/wrk/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrk/wrk/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrk/envmgmt/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrk/envmgmt/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrk/templates/envmgmt/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/wrk/templates/envmgmt/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrk/templates/envmgmt/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wrk/templates/envmgmt/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,11 +27,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wrk/templates/index.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wrk/envmgmt/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+            <state relative-caret-position="119">
+              <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,14 +43,39 @@
         <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="40" />
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wrk/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wrk/envmgmt/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1156">
+              <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wrk/envmgmt/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -80,19 +104,20 @@
       <list>
         <option value="$PROJECT_DIR$/wrk/wrk/views.py" />
         <option value="$PROJECT_DIR$/wrk/envmgmt/models.py" />
-        <option value="$PROJECT_DIR$/wrk/envmgmt/views.py" />
         <option value="$PROJECT_DIR$/wrk/envmgmt/forms.py" />
         <option value="$PROJECT_DIR$/wrk/envmgmt/urls.py" />
-        <option value="$PROJECT_DIR$/wrk/templates/envmgmt/index.html" />
         <option value="$PROJECT_DIR$/wrk/templates/envmgmt/thanks.html" />
         <option value="$PROJECT_DIR$/wrk/templates/envmgmt/addprj.html" />
         <option value="$PROJECT_DIR$/wrk/wrk/settings.py" />
         <option value="$PROJECT_DIR$/wrk/wrk/urls.py" />
         <option value="$PROJECT_DIR$/wrk/templates/index.html" />
+        <option value="$PROJECT_DIR$/wrk/envmgmt/views.py" />
+        <option value="$PROJECT_DIR$/wrk/templates/envmgmt/index.html" />
+        <option value="$PROJECT_DIR$/wrk/templates/envmgmt/base.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="167" />
     <option name="y" value="30" />
     <option name="width" value="1582" />
@@ -117,6 +142,12 @@
               <item name="django_wrk" type="b2602c69:ProjectViewProjectNode" />
               <item name="django_wrk" type="462c0819:PsiDirectoryNode" />
               <item name="wrk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django_wrk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django_wrk" type="462c0819:PsiDirectoryNode" />
+              <item name="wrk" type="462c0819:PsiDirectoryNode" />
+              <item name="envmgmt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="django_wrk" type="b2602c69:ProjectViewProjectNode" />
@@ -205,9 +236,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/base.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/wrk/envmgmt/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -215,23 +243,6 @@
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrk/envmgmt/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wrk/envmgmt/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -256,13 +267,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrk/envmgmt/urls.py">
+    <entry file="file://$PROJECT_DIR$/wrk/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -279,17 +287,44 @@
     <entry file="file://$PROJECT_DIR$/wrk/templates/base.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/index.html">
+    <entry file="file://$PROJECT_DIR$/wrk/envmgmt/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="40" />
+        <state relative-caret-position="119">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrk/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/wrk/envmgmt/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrk/envmgmt/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrk/templates/envmgmt/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
         </state>
       </provider>
     </entry>
