@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import index, add_details
+from .views import index, add_details, add_prj
 
 urlpatterns = [
     path('', index),
-    #path('addprj/', add_project),
+    path('addprj/', add_prj),
     path('adddtl/', add_details),
 ]

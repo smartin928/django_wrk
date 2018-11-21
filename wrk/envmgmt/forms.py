@@ -1,17 +1,15 @@
 from django import forms
-from .models import EnvDtl
+from .models import EnvDtl, Project
 
 
-#class EnvMainForm(forms.ModelForm):
-#
-#    class Meta:
-#        model = EnvMain
-#        fields = ('project_name', 'env_owner', 'env_tier')
-#        labels = {
-#            'project_name': 'Project',
-#            'env_owner': 'Owner',
-#            'env_tier': 'Tier',
-#        }
+class PrjForm(forms.ModelForm):
+
+    class Meta:
+        model = Project
+        fields = ('project_name',)
+        labels = {
+            'project_name': 'Project Name',
+        }
 
 
 class EnvDtlForm(forms.ModelForm):
