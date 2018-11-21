@@ -76,15 +76,12 @@ WSGI_APPLICATION = 'wrk.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'django',
-        'USER': 'django',
-        'PASSWORD': 'Django123',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'wrk',
+        'USER': 'wrkenv',
+        'PASSWORD': 'Amanda1985',
         'HOST': 'localhost',
-        'PORT': '',
-        'OPTIONS': {
-            'driver': 'SQL Server Native Client 11.0',
-        },
+        'PORT': '3306'
     }
 }
 
