@@ -4,7 +4,7 @@ from .models import Project
 
 
 def index(request):
-    prjs = Project.objects.values('project_name')
+    prjs = Project.objects.all()
     return render(request, 'envmgmt/index.html', {'prjs': prjs})
 
 
@@ -29,4 +29,10 @@ def add_details(request):
         form = EnvDtlForm()
 
     return render(request, 'envmgmt/adddtl.html', {'form': form})
+
+
+def show_prj(request, prj_id):
+    prj = prj_id
+    
+    return render(request, 'envmgmt/prjmain.html', {'prj': prj})
 
