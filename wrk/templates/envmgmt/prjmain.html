@@ -1,4 +1,7 @@
 {% extends 'envmgmt/base.html' %}
 {% block content %}
-{{ prj }}
+<h2>Project details for {{ prj.project_name }}</h2>
+{% for prjdtl in prjdtls %}
+    <ul>{{ prjdtl.env_owner }} -- {{ prjdtl.env_location }} {{ prjdtl.env_tier }}</ul>
+{% endfor %}
 {% endblock %}

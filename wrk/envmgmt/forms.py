@@ -1,5 +1,5 @@
 from django import forms
-from .models import EnvDtl, Project
+from .models import EnvDtl, Project, EnvHdr
 
 
 class PrjForm(forms.ModelForm):
@@ -9,6 +9,24 @@ class PrjForm(forms.ModelForm):
         fields = ('project_name',)
         labels = {
             'project_name': 'Project Name',
+        }
+
+
+class EnvHdrForm(forms.ModelForm):
+
+    class Meta:
+        model = EnvHdr
+        fields = (
+            'project_name',
+            'env_owner',
+            'env_tier',
+            'env_location',
+        )
+        labels = {
+            'project_name': 'Project Name',
+            'env_owner': 'Owner',
+            'env_tier': 'Tier',
+            'env_location': 'Location',
         }
 
 

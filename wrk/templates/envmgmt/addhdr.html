@@ -1,0 +1,13 @@
+{% extends 'envmgmt/base.html' %}
+{% block content %}
+<h2>Add Project</h2>
+<center>
+<form method="POST">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Add">
+</form>
+</center>
+{% endblock %}

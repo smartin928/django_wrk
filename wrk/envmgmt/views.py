@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .forms import EnvDtlForm, PrjForm
-from .models import Project
+from .forms import EnvDtlForm, PrjForm, EnvHdrForm
+from .models import Project, EnvHdr
 
 
 def index(request):
@@ -31,8 +31,19 @@ def add_details(request):
     return render(request, 'envmgmt/adddtl.html', {'form': form})
 
 
+def add_hdr(request):
+    if request.method == 'POST':
+        form = EnvHdrForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, 'envmgmt/thanks.html')
+    else:
+        form = EnvHdrForm()
+    return render(request, 'envmgmt/addhdr.html', {'form': form})
+
+
 def show_prj(request, prj_id):
-    prj = prj_id
-    
-    return render(request, 'envmgmt/prjmain.html', {'prj': prj})
+    prj = Project.objects.get(prg_id=prj_id)
+    prjdtls = EnvHdr.objects.filter(project_name_id=prj_id)
+    return render(request, 'envmgmt/prjmain.html', {'prjdtls': prjdtls, 'prj': prj})
 
