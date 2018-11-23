@@ -2,6 +2,6 @@
 {% block content %}
 <h2>Project details for {{ prj.project_name }}</h2>
 {% for prjdtl in prjdtls %}
-    <ul>{{ prjdtl.env_owner }} -- {{ prjdtl.env_location }} {{ prjdtl.env_tier }}</ul>
+    <ul>{{ prjdtl.env_owner }} -- <a href="{{ prjdtl.id }}/">{{ prjdtl.env_location }} {{ prjdtl.env_tier }}</a></ul>
 {% endfor %}
 {% endblock %}
