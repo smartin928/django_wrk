@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static "css/site.css" %}">
+    {% block head %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="/"">home</a>
+    <a href="/envmgmt">env mgmt home</a>
+    <a href="/envmgmt/addprj">add project</a>
+    <a href="/envmgmt/addhdr">add project header</a>
+    <a href="/envmgmt/adddtl">add project detail</a>
+    {% block nav %}{% endblock %}
+</div>
+<div class="content">
+    <h1>Environment Management</h1>
+    {% block content %}{% endblock %}
+</div>
+<div class="footer">
+<center>&copy Sean Martin 2018</center>
+</div>
+</body>
+</html>
