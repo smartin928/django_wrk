@@ -20,6 +20,6 @@ from .views import index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
-    path('envmgmt/', include('envmgmt.urls')),
+    #path('envmgmt/', include('envmgmt.urls')),
     path('prjinfra/', include('prjinfra.urls')),
 ]

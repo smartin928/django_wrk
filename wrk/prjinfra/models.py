@@ -1,5 +1,12 @@
 from django.db import models
 
+TIER = (
+    ('DEV', 'Development'),
+    ('TEST', 'Testing'),
+    ('QA', 'Quality Assurance'),
+    ('PROD', 'Production'),
+)
+
 
 class Project(models.Model):
     prj_name = models.CharField(max_length=50)
@@ -47,21 +54,35 @@ class Application(models.Model):
         ('REFS', 'Refs Web')
     )
 
-    TIER = (
-        ('DEV', 'Development'),
-        ('TEST', 'Testing'),
-        ('QA', 'Quality Assurance'),
-        ('PROD', 'Production'),
-    )
-
+    prj = models.ForeignKey('Project', on_delete=models.CASCADE)
     srv = models.ForeignKey('Server', on_delete=models.CASCADE)
     sys_account = models.CharField(max_length=25)
     tier = models.CharField(max_length=25, choices=TIER)
+    app = models.CharField(max_length=25, choices=APP)
+    app_version = models.CharField(max_length=100)
     app_path = models.CharField(max_length=100)
     app_port = models.CharField(max_length=10)
 
     def __str__(self):
         return "%s %s" % (self.srv, self.tier)
+
+
+class Database(models.Model):
+
+    DBTYPE = (
+        ('SQL SERVER', 'Microsoft SQL Server'),
+        ('ORACLE', 'Oracle'),
+    )
+
+    prj = models.ForeignKey('Project', on_delete=models.CASCADE)
+    srv = models.ForeignKey('Server', on_delete=models.CASCADE)
+    sys_account = models.CharField(max_length=25)
+    tier = models.CharField(max_length=25, choices=TIER)
+    dbms = models.CharField(max_length=25, choices=DBTYPE)
+    dbms_version = models.CharField(max_length=100)
+
+    def __str__(self):
+        return "%s - %s - %s" % (self.prj, self.srv, self.dbms)
 
 
 class Rollout(models.Model):

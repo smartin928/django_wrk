@@ -1,0 +1,14 @@
+{% extends 'prjinfra/base.html' %}
+{% block content %}
+	<!-- Loop through what tiers there are and print them -->
+	{% for tier in tiers %}
+		<ul>{{ tier.tier }}</ul>
+		{% for app in apps %}
+			{% if app.tier == tier.tier %}
+				<ul>{{ app.srv }}</ul>
+			{% endif %}
+		{% endfor %}
+		<!-- Loop through Application list, then check tier to tier, print if == -->
+	{% endfor %}
+
+{% endblock %}

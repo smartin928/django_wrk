@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'prjinfra/base.html' %}
+{% block content %}
+    <h2>Available Projects</h2>
+    {% if prjs != None %}
+        {% for prj in prjs %}
+            <ul><a href="project/{{ prj.prj_name }}">{{ prj.prj_name }}</a></ul>
+        {% endfor %}
+    {% else %}
+        <ul>No projects found</ul>
+    {% endif %}
+{% endblock %}

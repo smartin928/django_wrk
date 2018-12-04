@@ -15,10 +15,12 @@
 			<td>App Server 1:</td>
 			<td>{{ dtls.app_server1 }}</td>
 		</tr>
+		{% if dtls.app_server2 != '' %}
 		<tr>
 			<td>App Server 2:</td>
 			<td>{{ dtls.app_server2 }}</td>
 		</tr>
+		{% endif %}
 		<tr>
 			<td>Operating System:</td>
 			<td>{{ dtls.app_os }}</td>
@@ -33,11 +35,11 @@
 		</tr>
 		<tr>
 			<td>Console URL:</td>
-			<td>http://{{ dtls.app_server1 }}:{{ dtls.app_port }}/console</td>
+			<td><a href=http://{{ dtls.app_server1 }}:{{ dtls.app_port }}/console>http://{{ dtls.app_server1 }}:{{ dtls.app_port }}/console</a></td>
 		</tr>
 		<tr>
 			<td>REFS URL:</td>
-			<td>{{ dtls.refs_url }}</td>
+			<td><a href="{{ dtls.refs_url }}">{{ dtls.refs_url }}</a></td>
 		</tr>
 		<tr>
 			<td>Database Name:</td>
@@ -47,10 +49,12 @@
 			<td>Database Server:</td>
 			<td>{{ dtls.db_server1 }}</td>
 		</tr>
-		<tr>
-			<td>Database Server 2:</td>
-			<td>{{ dtls.db_server2 }}</td>
-		</tr>
+		{% if dtls.db_server2 != '' %}
+			<tr>
+				<td>Database Server 2:</td>
+				<td>{{ dtls.db_server2 }}</td>
+			</tr>
+		{% endif %}
 		<tr>
 			<td>Database Type:</td>
 			<td>{{ dtls.db_type }}</td>
